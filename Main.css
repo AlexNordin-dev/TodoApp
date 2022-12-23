@@ -1,0 +1,88 @@
+/*__________Global styles_____________ */
+* {
+    margin: 3px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 215, 223);
+}
+/*__________End global styles_____________ */
+
+
+
+
+/*__________Utility styles_____________ */
+.todobox {
+    height: 90vh;    
+    width: 600px;
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 10px;   
+    border-radius: 10px; 
+   
+}
+
+
+.todo-list-output {
+    padding: 10px;
+ 
+}
+#todoLiCreate {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1rem;
+}
+/*__________End utility styles_____________ */
+
+
+
+
+
+
+/*__________Button styles_____________ */
+.btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.delete-btn {
+    background-color: transparent;
+    color: lightcoral;
+    border: none;
+    cursor: pointer; 
+}
+
+.delete-btn:hover {
+    color: red;
+}
+
+.done-btn {
+    background-color: transparent;
+    color: lightseagreen;
+    border: none;
+    cursor: pointer;
+}
+
+.done-btn:hover {
+    color: green;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.done {
+    opacity: 0.4;
+}
+/*__________End button styles_____________ */

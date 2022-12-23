@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Main.css">
+    <script src="https://kit.fontawesome.com/5b0012e845.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="todobox">
+        <!-- -------------------Input--------------------------- -->
+        <form id="todo-from-input">
+            <div>
+                <label for="todo-imput">Lägg till en todo: </label> <br>
+                <input type="text" class="todo-list-input" placeholder="" name="todo-imput" id="todo-list-input-i">
+            </div>
+            <input type="date" id="dateid" class="todo-date-imput" placeholder="" />
+            <select name="" id="todo-category-input-i">
+                <option value="Jobb">Jobb</option>
+                <option value="Hushållsarbete">Hushållsarbete</option>
+            </select>
+            <br>
+            <button type="submit" class="btn btn-input-form-c"> Lägg till</button>
+        </form>
+        <hr>
+        <!-- ------------------End input---------------------------- -->
+
+        <!-- --------------------Filters output-------------------------- -->
+        <h3>Filter på:</h3>
+        <div>
+            <label for="filter"></label>
+            <input type="text" class="todo-list-filter" name="filter" id="todo-list-filter-output-i" placeholder="Söka">
+        </div>
+
+        <div id="todo-filter-options-i">
+
+            <label for="all-options">
+                <input type="radio" value="all" name="filterCategory" checked class="todo-filter-options"
+                    id="all-options" onclick="filterSwitch('All')" />
+                Alla
+            </label>
+            <label for="Hem-options">
+                <input type="radio" value="Hushållsarbete" name="filterCategory" class="todo-filter-options"
+                    id="Hem-options" onclick="filterSwitch('Hushållsarbete')" />
+                Hushållsarbete
+            </label>
+            <label for="Jobb-options">
+                <input type="radio" value="Jobb" name="filterCategory" class="todo-filter-options" id="Jobb-options"
+                    onclick="filterSwitch('Jobb')" />
+                Jobb
+
+            </label>
+
+        </div>
+        <!-- --------------------End filters output-------------------------- -->
+
+
+
+        <!-- --------------------Output-------------------------- -->
+        <hr>
+        <h3>Att göra:</h3>
+        <div>
+            <ul class="todo-list-output"></ul>
+        </div>
+        <!-- --------------------End output-------------------------- -->
+
+    </div>
+
+    <script src="Main.js"></script>
+</body>
+<script></script>
+
+</html>
+
